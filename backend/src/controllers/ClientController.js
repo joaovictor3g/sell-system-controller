@@ -21,6 +21,8 @@ module.exports = {
             value,
             diamonds 
         })
+
+        return res.json({ message: 'deu certo :v' })
     },
 
     async listClients(req, res) {
