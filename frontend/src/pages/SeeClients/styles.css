@@ -1,0 +1,27 @@
+.principal-container {
+    text-align: center;
+    align-items: center;
+    margin: 20px 20px;
+    padding: 20px auto;
+    background: #FFF;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.principal-container .table-principal {
+    width: 100%;
+    border: 1px solid #000;
+
+
+}
+
+.principal-container .table-principal tbody tr {
+    height: 50px;
+}
+
+.principal-container .table-principal tbody .initial-row {
+    background: #ff1a1a;
+    color: #FFF;
+}

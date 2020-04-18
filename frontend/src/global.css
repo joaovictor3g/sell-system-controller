@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font: 400 14px Roboto, sans-serif;
+    background: #ddd;
+    -webkit-font-smoothing: antialiased;
+}
