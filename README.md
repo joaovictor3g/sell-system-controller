@@ -3,10 +3,10 @@
 ### This is only an minimalist project to help me with some tasks, using Node.js in backend and ReactJS in frontend.
 
 ### How to run?
-    - Clone: `git clone`
-    - `npm install` in both folders to install all dependences.
-    - `npm run dev` to run backend.
-    - `npm start` to run frontend. 
+- Clone: `git clone`
+- `npm install` in both folders to install all dependences.
+- `npm run dev` to run backend.
+- `npm start` to run frontend. 
 
 ### How to contribute?
 - Fork this repository;
