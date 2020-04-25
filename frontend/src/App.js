@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Routes from './routes';
+import Light from './components/light';
+
 import './global.css';
 
 function App() {

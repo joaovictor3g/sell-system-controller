@@ -31,6 +31,7 @@ export default function Login() {
     }
     
     return (
+        <>
         <div className="login-container">
             <form className="formulary" onSubmit={toLogin}>
                 User:
@@ -50,5 +51,6 @@ export default function Login() {
                 <button type="submit" className="btn-login">Login</button>
             </form>
         </div>
+        </>
     );
 }

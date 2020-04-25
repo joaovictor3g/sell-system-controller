@@ -10,6 +10,17 @@
     
 }
 
+svg {
+    background: #DDD;
+    margin: 20px;
+    transition: all 0.2s;
+   
+}
+
+svg:hover {
+    opacity: 0.5;
+}
+
 .principal-container .table-principal {
     width: 100%;
     border: 1px solid #000;
@@ -24,4 +35,17 @@
 .principal-container .table-principal tbody .initial-row {
     background: #ff1a1a;
     color: #FFF;
+}
+
+.principal-container .table-principal tbody tr .delete-column {
+    background: #000;
+}
+
+.principal-container .table-principal tbody tr td button {
+    background: transparent;
+    border: 0;
+}
+
+.principal-container .table-principal tbody tr td svg {
+    background: transparent;
 }

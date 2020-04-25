@@ -5,12 +5,16 @@ import api from '../../services/api';
 
 import './styles.css';
 
-export default function Logged() {
+export default function Logged(props) {
     const [name, setName] = useState('');
     const [id_game, setGame_id] = useState('');
     const [value, setValue] = useState('');
     const [diamonds, setDiamonds] = useState('');
     const history = useHistory();
+
+    const { id } = props.match.params;
+
+    localStorage.setItem('id_vendor', id);
 
     async function persistData(e) {
         e.preventDefault();
@@ -80,7 +84,7 @@ export default function Logged() {
         </div>
         <div className="footer">
             <button className="btn-see-clients" onClick={goToSeeClients}>See your clients</button>
-            <button className="btn-back-home" onClick={() => history.push('/')}>Back to Home</button>
+            <button className="btn-back-home" onChange={() => localStorage.clear()} onClick={() => history.push('/')}>Back to Home</button>
         </div>
         </>
     )
