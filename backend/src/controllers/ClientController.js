@@ -27,8 +27,21 @@ module.exports = {
 
     async listClients(req, res) {
         const response = await connection('users')
-                    .select('*');
+                .orderBy(['name'], {
+                    column: 'name',
+                    order: 'asc'
+                });
 
         return res.json(response);
+    },
+
+    async deleteClient(req, res) {
+        const { id } = req.params;
+
+        await connection('users')
+            .where('id', id)
+            .del();
+        
+        return res.json({ message: 'All done' });
     }
 };
