@@ -31,6 +31,8 @@ export default function Logged(props) {
 
             eraseFields();
 
+            alert('Client was saved!');
+
         } catch (error) {
             alert('Deu erro');
         }
